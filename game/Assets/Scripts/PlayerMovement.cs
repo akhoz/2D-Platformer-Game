@@ -60,10 +60,13 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, moveInput.y * climbSpeed);
             rb.gravityScale = 0f;
+            bool isMoving = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
+            anim.SetBool("isClimbing", isMoving);
         }
         else
         {
             rb.gravityScale = gravityScaleAtStart;
+            anim.SetBool("isClimbing", false);
         }
     }
     
