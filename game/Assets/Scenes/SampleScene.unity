@@ -1252,73 +1252,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1 &74075928 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 915905715154732984, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
-  m_PrefabInstance: {fileID: 6928471172687206778}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &74075932
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74075928}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &74075933
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74075928}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.034819126, y: -0.109430194}
-  m_Size: {x: 0.5125389, y: 0.7811396}
-  m_Direction: 0
 --- !u!1 &339676670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10357,13 +10290,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 915905715154732984, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 74075933}
-    - targetCorrespondingSourceObject: {fileID: 915905715154732984, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 74075932}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
