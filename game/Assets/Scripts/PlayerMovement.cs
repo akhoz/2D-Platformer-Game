@@ -8,23 +8,27 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed = 10f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float climbSpeed = 7f;
     
     Vector2 moveInput;
     Rigidbody2D rb;
     Animator anim;
     CapsuleCollider2D bodyCollider;
+    float gravityScaleAtStart;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         bodyCollider = GetComponent<CapsuleCollider2D>();
+        gravityScaleAtStart = rb.gravityScale;
     }
     
     void Update()
     {
         Run();
         FlipSprite();
+        Climb();
     }
     
     void OnMove(InputValue value)
@@ -48,6 +52,19 @@ public class PlayerMovement : MonoBehaviour
         
         bool isMoving = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon; //Mathf.Epsilons basically 0
         anim.SetBool("isRunning", isMoving);
+    }
+
+    void Climb()
+    {
+        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, moveInput.y * climbSpeed);
+            rb.gravityScale = 0f;
+        }
+        else
+        {
+            rb.gravityScale = gravityScaleAtStart;
+        }
     }
     
     void FlipSprite()
