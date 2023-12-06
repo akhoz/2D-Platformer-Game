@@ -10247,13 +10247,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2384406941939631855, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
+      propertyPath: jumpSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173395591798159040, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
+      propertyPath: m_GravityScale
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173395591798159040, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8719766937830905415, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.55
+      value: -8.29
       objectReference: {fileID: 0}
     - target: {fileID: 8719766937830905415, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8719766937830905415, guid: 1c153621f3b7608469af7f12519e7b2b, type: 3}
       propertyPath: m_LocalPosition.z
